@@ -4,12 +4,8 @@
   `yarn init`
 - Install package express dan nodemon :
   `yarn install express nodemon`
-- Install package mysql2 :
-  `yarn add mysql2`
-- Install package dotenv :
-  `yarn add dotenv`
-- Install package multer (Image Upload) :
-  `yarn add multer`
+- Install package mysql2, dotenv, multer (Upload Image), CORS, Sequelize (ORM Database) One line :
+  `yarn add mysql2 dotenv multer cors sequelize`
 
 ## # Step 2
 
@@ -55,6 +51,13 @@ app.get('/nomor/:id([0-9]{5})', function (req, res) {
     res.send('id: ' + req.params.id);
 });
 ```
+
+## TODO :
+
+- Auth / JWT
+- ORM Database Sequelize
+- Pagination
+- Logging (Sentry in productions)
 
 _For Questions :
 `iwan.webdveloper@gmail.com`_
